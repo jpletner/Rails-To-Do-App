@@ -1,0 +1,18 @@
+<h2>Create New Task</h2>
+
+<% if @task.errors.any? %>
+<h4>Please fix these errors:</h4>
+<ul>
+  <% @task.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<form action="/tasks" method="post">
+  <label for="task_name">Task</label>
+  <input id="task_name" name="task[name]" type="text" value="<%= @task.name %>">
+  <label for="task_phone">Task Details</label>
+  <input id="task_phone" name="task[desc]" type="text" value="<%= @task.desc %>">
+  <button>Create Task</button>
+</form>

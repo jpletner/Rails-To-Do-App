@@ -1,0 +1,139 @@
+//Variables
+
+$text_default: #fff;
+$bg_default: #232B2B;
+$text_highlight: #E3AE57; 
+$bg_highlight: lightgrey;
+$brand_color: #DC3D24;
+$df_fs: 14px;
+$sm_fs: 18px;
+$md_fs: 22px;
+$lg_fs: 36px;
+$xlg_fs: 80px;
+$font_fam: sans-serif;
+
+body {
+    background: $bg_default;
+    color: $text_default;
+    font-family: $font_fam;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: $xlg_fs;
+    color: $brand_color;
+    font-weight: 800;
+    text-align: center;
+    font-family: monospace;
+}
+
+h2 {
+    font-size: $lg_fs;
+    margin: 20px;
+    
+}
+
+h3 {
+    font-size: $md_fs;
+    margin: 20px;
+    color: $text_highlight;
+}
+
+h4 {
+    font-size: $sm_fs;
+    margin: 20px;
+}
+
+p {
+    font-size: $df_fs;
+    margin: 20px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    margin: 15px;
+    text-decoration: none;
+    color: $bg_highlight;
+    font-size: $df_fs;
+    &:hover {
+    color: $brand-color;
+    } 
+}
+
+button {
+    background-color: $brand_color;
+    color: $text_default;
+    border-radius: 5px;
+    &:hover {
+        background-color: $text_default;
+        color: $brand_color;
+    }
+}
+
+form {
+    label {
+        margin-right: 10px;
+    }input {
+        margin-right: 10px;
+    }
+}
+
+#footer {
+    font-family: cursive;
+    position: fixed;
+    bottom: 0;
+    color: $text_highlight;
+}
+
+.add_tasks {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    height: auto;
+    width: 100%;    
+        .task_desc {
+            width: 20%;
+        }
+}
+
+.active_tasks {
+    position: absolute;
+    top: 25%;
+    width: 20%;
+    height: auto;
+        li {
+            padding: 4%;
+        }
+        form {
+            float: right;
+        }
+}
+
+.completed {
+    position: absolute;
+    top: 60%;
+    width: 50%;
+    height: auto;
+    li {
+        list-style-type:disc;
+        margin-left: 5%;
+    }
+}
+
+p {
+    margin: 10px;
+    a {
+        color: $text_highlight;
+        &:hover {
+            color: $brand_color;
+        }
+    }
+}
+
+span {
+    color: $text_highlight;
+}

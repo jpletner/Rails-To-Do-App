@@ -1,0 +1,14 @@
+<h2><span>Task Name:</span> <%= @task.name %></h2>
+
+<h4><span>Task Description:</span> <%= @task.desc %></h4>
+<h4><span>Done:</span> <%= @task.done %></h4>
+
+
+<p><a href="/tasks/<%= @task.id %>/edit">Edit</a></p>
+<p><a href="/tasks/<%= @task.id %>"
+  data-confirm="You sure?"
+  data-method="delete"
+  rel="nofollow">Delete</a></p>
+  <p><a href="/tasks">Return to To Do List</a></p>
+
+
